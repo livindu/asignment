@@ -30,7 +30,8 @@ In this lab the main objective is to built a water level controlling system for 
 
 ## PCB DESIGN
 
-![Example screenshot](./img/screenshot.png)
+![pcb](https://user-images.githubusercontent.com/109481748/179644550-bda3bf97-812c-4898-b0cd-0de3fe59d9dc.jpg)
+
 
 ## REAL IMPLEMENTATION
 
