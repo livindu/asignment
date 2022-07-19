@@ -5,10 +5,7 @@
 
 ## INTRODUCTION
 
-In this lab the main objective is to built a water level controlling system for a water tank using a PIC16F877A Microcontroller. Using the programmming techniques such as
-interrupts. Briefly the setup of the task is a water tank that has two DC motors to control the water flow within the tank where one DC motor is used to pump water into the tank and 
-the other DC motor to pump water out of the tank. The water level of the tank is measured using three water level sensors which controls the two DC motors accordingly when to start the water
-inlet motor and when to start the water outlet motor. 
+In this lab the main objective is to built a water level controlling system for a water tank using a PIC16F877A Microcontroller. Using the programmming techniques such as interrupts. Briefly the setup of the task is a water tank that has two DC motors to control the water flow within the tank where one DC motor is used to pump water into the tank and the other DC motor to pump water out of the tank. The water level of the tank is measured using three water level sensors which controls the two DC motors accordingly when to start the water inlet motor and when to start the water outlet motor. 
 
 
 ## OPERATIONAL DESIGN
@@ -17,7 +14,8 @@ inlet motor and when to start the water outlet motor.
 
 
 ## OPERATIONAL TABLE
-![Example screenshot](./img/screenshot.png)
+![chart](https://user-images.githubusercontent.com/109481748/179644327-14d12de8-2b1f-41dd-a4ae-7d573c4222fb.jpg)
+
 
 ## MAIN COMPONENTS
 
