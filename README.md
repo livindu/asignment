@@ -60,7 +60,7 @@ CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and r
 
 <!-- CODE START -->
 
-`
+
 #pragma config FOSC = HS // Oscillator Selection bits (HS oscillator)
 
 #pragma config WDTE = OFF // Watchdog Timer Enable bit (WDT disabled)
@@ -150,7 +150,7 @@ void main(void)
 }
  return; 
 }
-`
+
 
 <!-- CODE END -->
 
