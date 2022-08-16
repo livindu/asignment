@@ -35,7 +35,7 @@ In this lab the main objective is to built a water level controlling system for 
 
 ## REAL IMPLEMENTATION
 
-![Example screenshot](./img/screenshot.png)
+![real circuit](https://user-images.githubusercontent.com/109481748/184779747-fe1bbde1-6444-4e9e-a6e8-6e58ad6a26d3.jpg)
 
 
 ## Screenshots
