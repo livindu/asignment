@@ -1,4 +1,4 @@
-# Microcomputers Lab 04
+# Microcomputers Lab 04 - Group 16
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
@@ -154,8 +154,9 @@ void main(void)
 
 <!-- CODE END -->
 
-## Contributed Member (Group 16)
+## Contributed Members (Group 16)
 
-- kd
-- k
-- k
+- K.K.D.R.Akalanka Kannangara - EN21475818
+- Karunarathne H.W.A.S. - EN21480836
+- D.M.L.L Gunarathne - EN21483806
+
