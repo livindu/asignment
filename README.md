@@ -45,7 +45,8 @@ CASE 1: when the sensor 1 is ON the MOTOR 1 gets ON (MOTOR 2 OFF)
 
 
 CASE 2: when the sensor 1 and sensor 2 are ON the MOTOR 1 gets ON (MOTOR 2 OFF)
-![Example screenshot](./img/screenshot.png)
+![s2](https://user-images.githubusercontent.com/109481748/184781554-98bb6161-1fb1-47d3-a721-4563d2fd971e.jpg)
+
 
 CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and runs for a time of 500ms and gets OFF (MOTOR 1 OFF)
 ![Example screenshot](./img/screenshot.png)
