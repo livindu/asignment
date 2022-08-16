@@ -47,7 +47,8 @@ In this lab the main objective is to built a water level controlling system for 
 ## RESULTS
 
 CASE 1: when the sensor 1 is ON the MOTOR 1 gets ON (MOTOR 2 OFF)
-![Example screenshot](./img/screenshot.png)
+![IMG_20220815_142029](https://user-images.githubusercontent.com/109481748/184780620-05e6b977-34f7-4ede-a321-68dc076c9f52.jpg)
+
 
 CASE 2: when the sensor 1 and sensor 2 are ON the MOTOR 1 gets ON (MOTOR 2 OFF)
 ![Example screenshot](./img/screenshot.png)
@@ -154,3 +155,8 @@ void main(void)
 
 <!-- CODE END -->
 
+##Contributed Member (Group 16)
+
+- k
+- k
+- k
