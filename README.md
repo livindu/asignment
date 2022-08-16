@@ -85,7 +85,7 @@ CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and r
 
 //ISR SET INTERRUPT SERVICE ROUTINE
 
-void__interrupt() isr(void){
+void __interrupt() isr(void){
 
     if (INTF==1) //Check if the interrupt is On
    {
