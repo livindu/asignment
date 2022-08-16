@@ -61,7 +61,7 @@ CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and r
 <!-- CODE START -->
 
 
---
+'''bash
 #pragma config FOSC = HS // Oscillator Selection bits (HS oscillator)
 
 #pragma config WDTE = OFF // Watchdog Timer Enable bit (WDT disabled)
@@ -154,7 +154,7 @@ void main(void)
 
 
 <!-- CODE END -->
-
+'''
 ## Contributed Members (Group 16)
 
 - K.K.D.R.Akalanka Kannangara - EN21475818
