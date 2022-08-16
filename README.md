@@ -61,90 +61,87 @@ CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and r
 <!-- CODE START -->
 
 
-'''bash
-#pragma config FOSC = HS // Oscillator Selection bits (HS oscillator)
 
-#pragma config WDTE = OFF // Watchdog Timer Enable bit (WDT disabled)
+__#pragma config FOSC = HS // Oscillator Selection bits (HS oscillator)
 
-#pragma config PWRTE = OFF // Power-up Timer Enable bit (PWRT disabled)
+__#pragma config WDTE = OFF // Watchdog Timer Enable bit (WDT disabled)
 
-#pragma config BOREN = OFF // Brown-out Reset Enable bit (BOR disabled)
+__#pragma config PWRTE = OFF // Power-up Timer Enable bit (PWRT disabled)
 
-#pragma config LVP = OFF // Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit (RB3 is digital I/O, HV on MCLR must be used for programming)
+__#pragma config BOREN = OFF // Brown-out Reset Enable bit (BOR disabled)
 
-#pragma config CPD = OFF // Data EEPROM Memory Code Protection bit (Data EEPROM code protection off)
+__#pragma config LVP = OFF // Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit (RB3 is digital I/O, HV on MCLR must be used for programming)
 
-#pragma config WRT = OFF // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)
+__#pragma config CPD = OFF // Data EEPROM Memory Code Protection bit (Data EEPROM code protection off)
 
-#pragma config CP = OFF // Flash Program Memory Code Protection bit (Code protection off)
+__#pragma config WRT = OFF // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)
 
-#define _XTAL_FREQ 20000000
+__#pragma config CP = OFF // Flash Program Memory Code Protection bit (Code protection off)
 
-#include <xc.h>
+__#define _XTAL_FREQ 20000000
 
-#include <xc.h>
+__#include <xc.h>
 
-//ISR SET INTERRUPT SERVICE ROUTINE
+__#include <xc.h>
 
-void __interrupt() isr(void){
+__//ISR SET INTERRUPT SERVICE ROUTINE
 
+__void __interrupt() isr(void){
     if (INTF==1) //Check if the interrupt is On
-    {
+   __{
     INTF=0; //Clear the interrupt
     
-// COMBINATION 3 OF THE OPERATION TABLE
+__// COMBINATION 3 OF THE OPERATION TABLE
 
-   if(RB2==1 && RB1==1 && RB0==1){
-       
-    RC2=0; // Motor 1 is OFF
-    RC1=1; // Motor 2 is ON
+  __if(RB2==1 && RB1==1 && RB0==1){ 
+    __RC2=0; // Motor 1 is OFF
+    __RC1=1; // Motor 2 is ON
     __delay_ms(500);  //MOTOR 2 is kept ON for 500ms
     RC1=0;    //Motor 2 is off
-    
-     }
+     __}
     }
 }
       
     
    
 
-void main(void)
+__void main(void)
 {
  // PORT configuration for SWITCHES / SENSORS and MOTORS
     
-   TRISB0 = 1; //Pin 0 of the PortB is the SWITCH 3
+  __TRISB0 = 1; //Pin 0 of the PortB is the SWITCH 3
    TRISB1 = 1; //Pin 1 of the PortB is the SWITCH 2
    TRISB2 = 1; //Pin 2 of the PortB is the SWITCH 1
    TRISC2 = 0; //OUTPUT for MOTOR 1
    TRISC1 = 0; //Output for MOTOR 2
  
-   INTF = 0;  
+   __INTF = 0;  
  
-   RC2=0; //MOTOR 1 OFF
+   __RC2=0; //MOTOR 1 OFF
    RC1=0; //MOTOR 2 OFF
  
  
-//OPTION_REG = 0b00000000;
+__//OPTION_REG = 0b00000000;
    
-   GIE=1;    //Enable global interrupt-Enables all unmasked interrupt
+   __GIE=1;    //Enable global interrupt-Enables all unmasked interrupt
    PEIE=1;   //Peripheral Interrupt enable-Enables all unmasked peripheral interrupts
    INTE =1;  //enable RB0 interrupt -  Enables the RB0 external interrupt
  
- while(1)
+ __while(1)
  {
 // COMBINATION 1 OF THE OPERATION TABLE   
      if (RB2==1 && RB1==0 && RB0==0 )
  {
     RC2=1; //Turn ON Motor 1
     
- } else {
+ __} else {
      
-// COMBINATION 2 OF THE OPERATION TABLE 
+__// COMBINATION 2 OF THE OPERATION TABLE 
      if(RB2==1 && RB1==1 && RB0==0)
  {
    RC2=1;  //Turn ON Motor 1  
    
- } else {        
+ __} else {        
     RC2=0;  //Turn OFF Motor 1 since there is no condition than above, other than the interrupt 
  }
  } 
@@ -154,7 +151,7 @@ void main(void)
 
 
 <!-- CODE END -->
-'''
+
 ## Contributed Members (Group 16)
 
 - K.K.D.R.Akalanka Kannangara - EN21475818
