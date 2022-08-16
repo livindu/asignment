@@ -52,6 +52,9 @@ CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and r
 ![s3](https://user-images.githubusercontent.com/109481748/184781976-65d30f83-ced8-4a41-9be5-eb9b62fa9c9b.jpg)
 
 
+![s32](https://user-images.githubusercontent.com/109481748/184782269-4467d4bf-de55-4b1c-a8a7-442ccb089844.jpg)
+
+
 
 ## CODE
 
@@ -151,7 +154,7 @@ void main(void)
 
 <!-- CODE END -->
 
-##Contributed Member (Group 16)
+## Contributed Member (Group 16)
 
 - k
 - k
