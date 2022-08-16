@@ -41,7 +41,7 @@ In this lab the main objective is to built a water level controlling system for 
 ## RESULTS
 
 CASE 1: when the sensor 1 is ON the MOTOR 1 gets ON (MOTOR 2 OFF)
-![IMG_20220815_142010](https://user-images.githubusercontent.com/109481748/184781107-71a4f4cb-d962-4727-9746-390c19591f06.jpg)
+![sensor 1](https://user-images.githubusercontent.com/109481748/184782616-d0fe580d-1313-4587-b236-c7d038969739.jpg)
 
 
 CASE 2: when the sensor 1 and sensor 2 are ON the MOTOR 1 gets ON (MOTOR 2 OFF)
