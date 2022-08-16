@@ -38,16 +38,10 @@ In this lab the main objective is to built a water level controlling system for 
 ![real circuit](https://user-images.githubusercontent.com/109481748/184779747-fe1bbde1-6444-4e9e-a6e8-6e58ad6a26d3.jpg)
 
 
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
-
-
-
 ## RESULTS
 
 CASE 1: when the sensor 1 is ON the MOTOR 1 gets ON (MOTOR 2 OFF)
-![IMG_20220815_142029](https://user-images.githubusercontent.com/109481748/184780620-05e6b977-34f7-4ede-a321-68dc076c9f52.jpg)
+![IMG_20220815_142010](https://user-images.githubusercontent.com/109481748/184781107-71a4f4cb-d962-4727-9746-390c19591f06.jpg)
 
 
 CASE 2: when the sensor 1 and sensor 2 are ON the MOTOR 1 gets ON (MOTOR 2 OFF)
