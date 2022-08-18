@@ -100,9 +100,7 @@ void __interrupt() isr(void){
    RC1=1; // Motor 2 is ON
    __delay_ms(500);  //MOTOR 2 is kept ON for 500ms
    RC1=0;    //Motor 2 is off
-    
-     }
-     }
+     } }
      
 }
       
