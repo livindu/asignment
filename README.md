@@ -61,20 +61,14 @@ CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and r
 <!-- CODE START -->
 
 
+
 #pragma config FOSC = HS // Oscillator Selection bits (HS oscillator)
-
 #pragma config WDTE = OFF // Watchdog Timer Enable bit (WDT disabled)
-
 #pragma config PWRTE = OFF // Power-up Timer Enable bit (PWRT disabled)
-
 #pragma config BOREN = OFF // Brown-out Reset Enable bit (BOR disabled)
-
 #pragma config LVP = OFF // Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit (RB3 is digital I/O, HV on MCLR must be used for programming)
-
 #pragma config CPD = OFF // Data EEPROM Memory Code Protection bit (Data EEPROM code protection off)
-
 #pragma config WRT = OFF // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)
-
 #pragma config CP = OFF // Flash Program Memory Code Protection bit (Code protection off)
 
 #define _XTAL_FREQ 20000000
@@ -84,15 +78,13 @@ CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and r
 #include <xc.h>
 
 //ISR SET INTERRUPT SERVICE ROUTINE
-
-void __interrupt() isr(void){
-
+void __interrupt() isr(void) 
+{
     if (INTF==1) //Check if the interrupt is On
-   {
+    {
     INTF=0; //Clear the interrupt
     
 // COMBINATION 3 OF THE OPERATION TABLE
-
    if(RB2==1 && RB1==1 && RB0==1){
        
     RC2=0; // Motor 1 is OFF
