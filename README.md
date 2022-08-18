@@ -14,6 +14,7 @@ In this lab the main objective is to built a water level controlling system for 
 
 
 ## OPERATIONAL TABLE
+
 ![chart](https://user-images.githubusercontent.com/109481748/179644327-14d12de8-2b1f-41dd-a4ae-7d573c4222fb.jpg)
 
 
