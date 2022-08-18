@@ -1,4 +1,4 @@
-# Microcomputers Lab 04
+# Microcomputers Lab 04 - Group 16
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
@@ -14,6 +14,7 @@ In this lab the main objective is to built a water level controlling system for 
 
 
 ## OPERATIONAL TABLE
+
 ![chart](https://user-images.githubusercontent.com/109481748/179644327-14d12de8-2b1f-41dd-a4ae-7d573c4222fb.jpg)
 
 
@@ -35,30 +36,31 @@ In this lab the main objective is to built a water level controlling system for 
 
 ## REAL IMPLEMENTATION
 
-![Example screenshot](./img/screenshot.png)
-
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
-
+![real circuit](https://user-images.githubusercontent.com/109481748/184779747-fe1bbde1-6444-4e9e-a6e8-6e58ad6a26d3.jpg)
 
 
 ## RESULTS
 
 CASE 1: when the sensor 1 is ON the MOTOR 1 gets ON (MOTOR 2 OFF)
-![Example screenshot](./img/screenshot.png)
+![sensor 1](https://user-images.githubusercontent.com/109481748/184782616-d0fe580d-1313-4587-b236-c7d038969739.jpg)
+
 
 CASE 2: when the sensor 1 and sensor 2 are ON the MOTOR 1 gets ON (MOTOR 2 OFF)
-![Example screenshot](./img/screenshot.png)
+![s2](https://user-images.githubusercontent.com/109481748/184781554-98bb6161-1fb1-47d3-a721-4563d2fd971e.jpg)
+
 
 CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and runs for a time of 500ms and gets OFF (MOTOR 1 OFF)
-![Example screenshot](./img/screenshot.png)
+![s3](https://user-images.githubusercontent.com/109481748/184781976-65d30f83-ced8-4a41-9be5-eb9b62fa9c9b.jpg)
+
+
+![s32](https://user-images.githubusercontent.com/109481748/184782269-4467d4bf-de55-4b1c-a8a7-442ccb089844.jpg)
+
 
 
 ## CODE
 
 <!-- CODE START -->
+
 
 
 #pragma config FOSC = HS // Oscillator Selection bits (HS oscillator)
@@ -85,23 +87,22 @@ CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and r
 
 //ISR SET INTERRUPT SERVICE ROUTINE
 
-void __interrupt() isr(void) 
-{
-    if (INTF==1) //Check if the interrupt is On
-    {
+void __interrupt() isr(void){
+
+  if (INTF==1) //Check if the interrupt is On 
+   {
     INTF=0; //Clear the interrupt
     
 // COMBINATION 3 OF THE OPERATION TABLE
 
    if(RB2==1 && RB1==1 && RB0==1){
        
-    RC2=0; // Motor 1 is OFF
-    RC1=1; // Motor 2 is ON
-    __delay_ms(500);  //MOTOR 2 is kept ON for 500ms
-    RC1=0;    //Motor 2 is off
-    
-     }
-    }
+   RC2=0; // Motor 1 is OFF
+   RC1=1; // Motor 2 is ON
+   __delay_ms(500);  //MOTOR 2 is kept ON for 500ms
+   RC1=0;    //Motor 2 is off
+     } }
+     
 }
       
     
@@ -153,4 +154,10 @@ void main(void)
 
 
 <!-- CODE END -->
+
+## Contributed Members (Group 16)
+
+- K.K.D.R.Akalanka Kannangara - EN21475818
+- Karunarathne H.W.A.S. - EN21480836
+- D.M.L.L Gunarathne - EN21483806
 
